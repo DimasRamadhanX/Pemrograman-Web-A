@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Section</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #dddddd;
+        }
+
+        .testimonial {
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        .testimonial .container{
+            background-color: rgb(252, 252, 252);
+        }
+
+        .testimonial h2 {
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .testimonial .card-body {
+            padding: 0;
+        }
+
+        .testimonial .card-text {
+            font-style: italic;
+            color: #6c757d;
+        }
+
+        .testimonial .card-title {
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .testimonial .text-muted {
+            font-size: 0.9rem;
+        }
+        .testimonial .row {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .testimonial .col-image {
+            flex: 0 0 auto;
+        }
+
+        .testimonial .col-text {
+            flex: 1 1 auto;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial .col-md-6 {
+                text-align: center;
+            }
+
+            .testimonial .col-text {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+        
+
+        .rounded-circle {
+            max-width: 80px;
+            max-height: 80px;
+            min-height: 80px;
+            min-width: 80px;
+        }
+
+        .logos {
+            background-color: #aaa8ad;
+            padding: 20px 0;
+        }
+
+        .logose {
+            max-width: 100px;
+            max-height: 100px;
+            margin: 10px 30px;
+        }
+        
+
+       
+    </style>
+</head>
+
+<body>
+
+    <section class="testimonial pt-5 pb-0">
+        <div class="container pt-3 ">
+            <h2>OUR CLIENTS LOVE US</h2>
+            <div class="row g-4 px-5 ">
+                <div class="col-md-6 d-flex">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img src="gaga.jpg" class="rounded-circle mx-auto" alt="Client 1">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <p class="card-text">"I can't speak German, but I can if you'd like to listen, Awww"</p>
+                                <h5 class="card-title">Lady Gaga</h5>
+                                <p class="text-muted">CEO of Haus Gaga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img src="Beyonce-2013.jpg" class="rounded-circle mx-auto" alt="Client 2">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <p class="card-text">"Trust is like a mirror. You can fix it if it's broken, but you can still see the crack in that bastard's reflection."</p>
+                                <h5 class="card-title">Beyonce</h5>
+                                <p class="text-muted">Founder of Cécred</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img src="charli.jpg" class="rounded-circle mx-auto" alt="Client 3">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <p class="card-text">"My one thing is respect. I don't care about anything else. You should respect everyone around you - the people who work for you, peers. Be classy."</p>
+                                <h5 class="card-title">Charli XCX</h5>
+                                <p class="text-muted">CEO of Brat Summer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex">
+                    <div class="row">
+                        <div class="col-auto">
+                            <img src="bjork.jpg" class="rounded-circle mx-auto" alt="Client 4">
+                        </div>
+                        <div class="col">
+                            <div class="card-body">
+                                <p class="card-text">"I've always appreciated working with people I have chemistry with, who are friends, and where you feel that the work is growing while you are getting to know each other better."</p>
+                                <h5 class="card-title">Bjork</h5>
+                                <p class="text-muted">Founder of Homogenix</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container p-0">
+            <div class="logos d-flex justify-content-center align-items-center">
+                <img src="pngwing.com (32).png" alt="Logo 1" class="logose">
+                <img src="pngwing.com (33).png" alt="Logo 2" class="logose">
+                <img src="pngwing.com (34).png" alt="Logo 3" class="logose">
+                <img src="pngwing.com (35).png" alt="Logo 4" class="logose">
+                <img src="pngwing.com (36).png" alt="Logo 5" class="logose">
+                <img src="pngwing.com (37).png" alt="Logo 6" class="logose">
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
