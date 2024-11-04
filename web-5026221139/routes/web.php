@@ -16,3 +16,20 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('biodata', 'App\\Http\\Controllers\\DosenController@biodata');
+/*blo etcetc*/
+Route::get('blog', 'App\\Http\\Controllers\\DosenController@blog');
+Route::get('blog/kontak', 'App\\Http\\Controllers\\DosenController@kontak');
+Route::get('blog/about', 'App\\Http\\Controllers\\DosenController@tentang');
+
+
+/*proes formulir */
+Route::get('/formulir', 'App\\Http\\Controllers\\PegawaiController@formulir');
+Route::post('/formulir/proses', 'App\\Http\\Controllers\\PegawaiController@proses');
+
+
+
+
+
