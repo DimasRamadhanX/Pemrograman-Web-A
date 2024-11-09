@@ -22,6 +22,34 @@ class DosenController extends Controller
 	public function kontak(){
 		return view('kontak');
 	}
+    public function Tugas1(){
+		return view('Tugas1');
+	}
+    public function form()
+    {
+        return view('form');
+    }
+
+    public function hello()
+    {
+        return view('hello');
+    }
+
+    public function responsive1()
+    {
+        return view('responsive1');
+    }
+
+    public function style()
+    {
+        return view('style');
+    }
+
+    public function style2()
+    {
+        return view('style2');
+    }
+
 
     public function biodata(){
         $nama="dimas fr";

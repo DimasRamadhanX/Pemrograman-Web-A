@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+}) -> name('UTS');
 
 
 Route::get('biodata', 'App\\Http\\Controllers\\DosenController@biodata');
@@ -32,4 +32,10 @@ Route::post('/formulir/proses', 'App\\Http\\Controllers\\PegawaiController@prose
 
 
 
-
+/*konvert tugas sebelumnya */
+Route::get('/tugasI', 'App\\Http\\Controllers\\DosenController@Tugas1');
+Route::get('/form', 'App\\Http\\Controllers\\DosenController@form');
+Route::get('/hello', 'App\\Http\\Controllers\\DosenController@hello');
+Route::get('/responsive1', 'App\\Http\\Controllers\\DosenController@responsive1');
+Route::get('/style', 'App\\Http\\Controllers\\DosenController@style');
+Route::get('/style2', 'App\\Http\\Controllers\\DosenController@style2');
