@@ -44,6 +44,11 @@ class DosenController extends Controller
     {
         return view('style');
     }
+    public function templateinitiate()
+    {
+        return view('templateinitiate');
+    }
+
 
     public function style2()
     {

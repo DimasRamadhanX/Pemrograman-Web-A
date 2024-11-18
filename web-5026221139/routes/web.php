@@ -33,9 +33,25 @@ Route::post('/formulir/proses', 'App\\Http\\Controllers\\PegawaiController@prose
 
 
 /*konvert tugas sebelumnya */
-Route::get('/tugasI', 'App\\Http\\Controllers\\DosenController@Tugas1');
-Route::get('/form', 'App\\Http\\Controllers\\DosenController@form');
-Route::get('/hello', 'App\\Http\\Controllers\\DosenController@hello');
-Route::get('/responsive1', 'App\\Http\\Controllers\\DosenController@responsive1');
-Route::get('/style', 'App\\Http\\Controllers\\DosenController@style');
-Route::get('/style2', 'App\\Http\\Controllers\\DosenController@style2');
+Route::get('/tugasI', 'App\\Http\\Controllers\\DosenController@Tugas1')-> name('Testi');
+Route::get('/form', 'App\\Http\\Controllers\\DosenController@form')-> name('form');
+Route::get('/hello', 'App\\Http\\Controllers\\DosenController@hello')-> name('hello');
+Route::get('/responsive1', 'App\\Http\\Controllers\\DosenController@responsive1')-> name('responsive');
+Route::get('/style', 'App\\Http\\Controllers\\DosenController@style')-> name('style');
+Route::get('/style2', 'App\\Http\\Controllers\\DosenController@style2')-> name('style2');
+Route::get('/templateinitiate', 'App\\Http\\Controllers\\DosenController@templateinitiate')-> name('templateinitiate');
+
+/*konek*/
+Route::get('/pegawai','App\\Http\\Controllers\\PegawaiDBController@index');
+/*tambah */
+Route::get('/pegawai/tambah','App\\Http\\Controllers\\PegawaiDBController@tambah');
+Route::post('/pegawai/store','App\\Http\\Controllers\\PegawaiDBController@store');
+/*hapus*/
+Route::get('/pegawai/hapus/{id}','App\\Http\\Controllers\\PegawaiDBController@hapus'); //dibuat nyantol {id} karena bukan requesst
+/*edit */
+Route::get('/pegawai/edit/{id}','App\\Http\\Controllers\\PegawaiDBController@edit');
+Route::post('/pegawai/update','App\\Http\\Controllers\\PegawaiDBController@update');
+
+/*searching*/
+
+Route::get('/pegawai/cari','App\\Http\\Controllers\\PegawaiDBController@cari');

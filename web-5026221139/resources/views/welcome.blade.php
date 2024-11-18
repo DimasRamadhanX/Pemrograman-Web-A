@@ -492,6 +492,15 @@
           <h3>
             <a href="https://lomando.com/englishtop.html" class="text-white text-decoration-none">angkuehkuh@maryattha.com</a>
           </h3>
+          <div class="d-flex flex-wrap gap-2">
+            <a href="{{ route('Testi') }}" class="btn btn-primary m-1">Tugas I</a>
+            <a href="{{ route('form') }}" class="btn btn-primary m-1">Form</a>
+            <a href="{{ route('hello') }}" class="btn btn-primary m-1">Hello</a>
+            <a href="{{ route('responsive') }}" class="btn btn-primary m-1">Responsive</a>
+            <a href="{{ route('style') }}" class="btn btn-primary m-1">Style</a>
+            <a href="{{ route('style2') }}" class="btn btn-primary m-1">Style 2</a>
+            <a href="{{ route('templateinitiate') }}" class="btn btn-primary m-1">Testi</a>
+        </div>
         </div>
       </div>
       <div class="row">
