@@ -91,9 +91,10 @@
                 <td>{{ $p->pegawai_umur }}</td>
                 <td>{{ $p->pegawai_alamat }}</td>
                 <td>
-                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-info btn-sm text-light">Edit</a>
-                    |
-                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">Hapus</a>
+                    <a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-info btn-sm text-light"><i class="fas fa-edit"></i><!--Edit--></a>
+
+                    <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">
+                        <i class="fa-solid fa-trash"></i><!--Hapus--></a>
                 </td>
             </tr>
             @endforeach
