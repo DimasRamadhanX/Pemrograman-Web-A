@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}"> {{--nyoba-nyoba security aja--}}
     <title>Dimas Fajar Ramadhan 5026221139</title>
+
+    <!--favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 
     <!--font awesom-->
@@ -26,7 +28,7 @@
             <!-- Logo or Brand -->
             <a class="navbar-brand fw-bold" href="/">Dimas Fajar Ramadhan 5026221139</a>
             <!-- Right Side Text -->
-            <span class="text-muted">malasngoding.com</span>
+            <span class="text-muted">Layout Pweb</span>
         </div>
     </header>
 
@@ -37,7 +39,7 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-3">
-        <p class="mb-0">&copy; {{ date('Y') }} My Application. All rights reserved.</p>
+        <p class="mb-0">Buat Tugas PWEB.</p>
     </footer>
 
     <!-- Bootstrap 5 JS Bundle -->

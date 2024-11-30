@@ -95,6 +95,7 @@
 
                     <a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger btn-sm" onclick="return confirm('Yakin ingin menghapus data ini?')">
                         <i class="fa-solid fa-trash"></i><!--Hapus--></a>
+                        <!--ini saya belum kasih icon secara local di public/storage atau asset("storage/fontawesome") -->
                 </td>
             </tr>
             @endforeach

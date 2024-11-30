@@ -55,3 +55,21 @@ Route::post('/pegawai/update','App\\Http\\Controllers\\PegawaiDBController@updat
 /*searching*/
 
 Route::get('/pegawai/cari','App\\Http\\Controllers\\PegawaiDBController@cari');
+
+
+/*Tugas PR*/
+Route::get('/lipstick','App\\Http\\Controllers\\LipstickDB@index');
+/*hapus lipstick*/
+Route::get('/lipstick/hapus/{kode}','App\\Http\\Controllers\\LipstickDB@hapus');
+/*edit <lipsticky*/
+Route::get('/lipstick/edit/{kode}','App\\Http\\Controllers\\LipstickDB@edit');
+Route::post('/lipstick/update','App\\Http\\Controllers\\LipstickDB@update');
+/*read detail*/
+Route::get('/lipstick/detail/{kode}','App\\Http\\Controllers\\LipstickDB@detail');
+/*tambah lipstick*/
+Route::get('/lipstick/tambah','App\\Http\\Controllers\\LipstickDB@tambah');
+Route::post('/lipstick/store','App\\Http\\Controllers\\LipstickDB@store');
+
+Route::get('/lipstick/cari','App\\Http\\Controllers\\LipstickDB@cari');
+
+
