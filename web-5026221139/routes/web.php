@@ -73,3 +73,8 @@ Route::post('/lipstick/store','App\\Http\\Controllers\\LipstickDB@store');
 Route::get('/lipstick/cari','App\\Http\\Controllers\\LipstickDB@cari');
 
 
+/*EAS*/
+Route::get('/nilaikuliah','App\\Http\\Controllers\\NilaiDBController@index');
+
+Route::get('/nilaikuliah/tambah','App\\Http\\Controllers\\NilaiDBController@tambah');
+Route::post('/nilaikuliah/store','App\\Http\\Controllers\\NilaiDBController@store');
